@@ -5,59 +5,82 @@
   box-sizing: border-box;
 }
 
-body{
+body {
   background: #fff;
   min-height: 100vh;
   overflow-x: hidden;
 }
+
 .banner {
   width: 100%;
-  height: 105vh;
-  background-image:linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(background.jpg);
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(background.jpg);
   background-size: cover;
   background-position: center;
   position: relative;
 }
 
-* svg{
+.custom-shape-divider-bottom-1688823942 {
   position: absolute;
-  top: 90%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 1390px;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
 }
 
-header{
+.custom-shape-divider-bottom-1688823942 svg {
+  position: relative;
+  display: block;
+  width: calc(150% + 1.3px);
+  height: 209px;
+}
+
+.custom-shape-divider-bottom-1688823942 .shape-fill {
+  fill: #FFFFFF;
+}
+
+/** For mobile devices **/
+@media (max-width: 767px) {
+  .custom-shape-divider-bottom-1688823942 svg {
+    width: calc(210% + 1.3px);
+    height: 143px;
+  }
+}
+
+header {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
-  padding: 30px 100px ;
+  padding: 30px 100px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   z-index: 100;
-  
+
 }
 
-.logo{
+.logo {
   font-size: 2em;
   color: aqua;
   pointer-events: none;
 }
 
 .navbar a {
-  text-decoration:none;
+  text-decoration: none;
   color: aqua;
-  padding:6px 15px ;
+  padding: 6px 15px;
   border-radius: 20px;
   margin: 0 10px;
   font-weight: 600;
 }
+
 .navbar a:hover {
   background: #359381;
   color: #fff;
-  
+
 }
 
 .container {
@@ -92,7 +115,8 @@ header{
 .btn {
   display: inline-block;
   padding: 10px 20px;
-  margin-top: 15px; ;
+  margin-top: 15px;
+  ;
   background-color: #333;
   color: #fff;
   text-decoration: none;
@@ -100,7 +124,7 @@ header{
   font-size: 18px;
 }
 
-.paket{
+.paket {
   margin-top: 100px;
 }
 
